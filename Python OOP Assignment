@@ -1,0 +1,21 @@
+# 🧠 Python OOP Assignment
+
+This repository contains the submission for the **Object-Oriented Programming Assignment** which includes:
+
+## 📌 Assignment 1: Design Your Own Class
+
+- ✅ Created a class `Smartphone` with attributes like brand, model, storage, and battery life.
+- ✅ Added methods like `specs()` and `charge()` to simulate real behavior.
+- ✅ Extended the class with `SuperSmartphone` to demonstrate inheritance and encapsulation.
+- ✅ Demonstrated constructor usage with `__init__`.
+
+## 🎭 Activity 2: Polymorphism Challenge
+
+- ✅ Created a parent class `Vehicle` with a method `move()`.
+- ✅ Created multiple child classes: `Car`, `Plane`, and `Boat`.
+- ✅ Each subclass defines its own version of `move()` to showcase **polymorphism**.
+
+## 🔧 How to Run
+
+```bash
+python main.py
