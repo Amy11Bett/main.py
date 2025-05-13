@@ -1,0 +1,56 @@
+# Assignment 1: Design Your Own Class!
+
+class Smartphone:
+    def __init__(self, brand, model, storage, battery_life):
+        self.brand = brand
+        self.model = model
+        self.storage = storage
+        self.battery_life = battery_life
+
+    def specs(self):
+        return f"{self.brand} {self.model} - {self.storage}GB Storage, {self.battery_life}hrs Battery"
+
+    def charge(self):
+        return f"{self.model} is charging 🔋"
+
+# Inheritance Example
+class SuperSmartphone(Smartphone):
+    def __init__(self, brand, model, storage, battery_life, camera_quality):
+        super().__init__(brand, model, storage, battery_life)
+        self.camera_quality = camera_quality
+
+    def take_photo(self):
+        return f"{self.model} takes a photo with {self.camera_quality}MP camera 📸"
+
+# Create objects
+phone1 = Smartphone("Samsung", "Galaxy S21", 128, 24)
+phone2 = SuperSmartphone("Apple", "iPhone 14 Pro", 256, 20, 48)
+
+print(phone1.specs())
+print(phone2.specs())
+print(phone2.take_photo())
+
+
+# Activity 2: Polymorphism Challenge
+
+class Vehicle:
+    def move(self):
+        pass
+
+class Car(Vehicle):
+    def move(self):
+        return "Driving 🚗"
+
+class Plane(Vehicle):
+    def move(self):
+        return "Flying ✈️"
+
+class Boat(Vehicle):
+    def move(self):
+        return "Sailing 🚢"
+
+# Demonstrate polymorphism
+vehicles = [Car(), Plane(), Boat()]
+
+for v in vehicles:
+    print(v.move())
